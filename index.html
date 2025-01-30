@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- DaisyUi cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -32,10 +39,36 @@
     };
   </script>
 </head>
-<body>
-  <div class="">
-    <h1 class="text-accent font-adlamDisplay">This is Clifford colored text with Sora font</h1>
-    <h6 class="text-customBlue font-adlamDisplay">This is custom blue with ADLaM Display font</h6>
-  </div>
+<body class="font-sora">
+    <header class="bg-[#FFF9F4] border-b border-text md:border-none">
+        <nav class="w-11/12 container mx-auto flex justify-between items-center py-2">
+             <!-- logo -->
+             <div>
+                <a href="#" class="flex justify-center items-center gap-2">
+                    <img src="./assets/logo-header.png" alt="navLogo">
+                    <span class="text-[26px] text-text hidden md:block">Browse<span class="text-accent">4</span>Pets</span>
+                </a>
+             </div>
+             <!-- navLinks -->
+             <ul class="lg:flex gap-5 hidden ">
+                <li><a href="#" class="text-[20px]">Find a pet</a></li>
+                <li><a href="#" class="text-[20px]">Breeds</a></li>
+                <li><a href="#" class="text-[20px]">Contact us</a></li>
+             </ul>
+             <!-- icons & button -->
+             <div class="md:flex hidden gap-3 justify-center items-center">
+                <div>
+                    <i class="bi bi-bell text-xl cursor-pointer hover:bg-accent px-2 py-1 rounded-full"></i>
+                <i class="bi bi-search text-xl cursor-pointer hover:bg-accent px-2 py-1 rounded-full"></i>
+                </div>
+                <button class="py-2 border rounded-md transition-all border-accent px-6 hover:bg-accent hover:border-accent hover:text-text">Login</button>
+                <button class=" bg-accent px-6 py-2 rounded-md hover:bg-amber-300 hover:border-accent   ">Register</button>
+             </div>
+             <!-- hamburger menu -->
+              <div class="md:hidden">
+                <i class="bi bi-list text-4xl"></i>
+              </div>
+        </nav>
+    </header>
 </body>
 </html>
