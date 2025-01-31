@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,7 +51,7 @@
 </head>
 <body class="font-sora">
     <header class="bg-[#FFF9F4] border-b border-text md:border-none">
-        <nav class="w-11/12 container mx-auto flex justify-between items-center py-2">
+        <nav class="w-11/12 container mx-auto flex justify-between items-center py-4">
              <!-- logo -->
              <div>
                 <a href="#" class="flex justify-center items-center gap-2">
@@ -61,9 +61,9 @@
              </div>
              <!-- navLinks -->
              <ul class="lg:flex gap-5 hidden ">
-                <li><a href="#" class="text-[20px]">Find a pet</a></li>
-                <li><a href="#" class="text-[20px]">Breeds</a></li>
-                <li><a href="#" class="text-[20px]">Contact us</a></li>
+                <li><a href="#category" class="text-[17px] hover:border-b-2 border-accent">Find a pet</a></li>
+                <li><a href="#breeds" class="text-[17px] hover:border-b-2 border-accent">Breeds</a></li>
+                <li><a href="#" class="text-[17px] hover:border-b-2 border-accent">Contact us</a></li>
              </ul>
              <!-- icons & button -->
              <div class="md:flex hidden gap-3 justify-center items-center">
@@ -72,60 +72,60 @@
                 <i class="bi bi-search text-xl cursor-pointer hover:bg-accent px-2 py-1 rounded-full"></i>
                 </div>
                 <button class="py-2 border rounded-md transition-all border-accent px-6 hover:bg-accent hover:border-accent hover:text-text">Login</button>
-                <button class=" bg-accent px-6 py-2 rounded-md hover:bg-amber-300 hover:border-accent   ">Register</button>
+                <button class=" bg-accent px-6 py-2 rounded-md hover:bg-amber-400 hover:border-accent">Register</button>
              </div>
              <!-- hamburger menu -->
               <div class="md:hidden">
-                <i class="bi bi-list text-4xl"></i>
+                <i class="bi bi-list text-5xl"></i>
               </div>
         </nav>
     </header>
     <main>
         <!-- hero section -->
-        <section class="w-11/12 container mx-auto pt-24 relative">
-            <img src="./assets/cat-big.png" alt="pet img" class="w-auto h-auto mt-20 md:mt-0">
+        <section class="w-11/12 container mx-auto pt-24 lg:pt-5 relative">
+            <img src="./assets/cat-big.png" alt="pet img" class="w-auto h-auto mt-20 md:mt-0 ms-auto">
             <div class="absolute top-10 lg:top-24 space-y-3 lg:space-y-7">
                 <h1 class="font-adlamDisplay text-3xl lg:text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
             <p class="text-base lg:text-xl w-3/4 lg:w-full">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
-            <button class=" bg-accent px-6 py-2 rounded-md hover:bg-amber-300 hover:border-accent   animate-float">Find a pet</button>
+            <button class=" bg-accent px-6 py-2 rounded-md hover:bg-amber-400 hover:border-accent   animate-float">Find a pet</button>
             </div>
         </section>
         <!-- category section -->
-         <section class="w-11/12 container mx-auto py-24 ">
-            <h2 class="text-2xl md:text-4xl font-adlamDisplay pb-10">Browse By Categories</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+         <section id="category" class="w-11/12 container mx-auto lg:py-24 py-14">
+            <h2 class="text-2xl md:text-4xl font-adlamDisplay lg:pb-10 pb-5">Browse By Categories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 lg:gap-6 gap-3">
                 <!-- card -->
-                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4">
+                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4 hover:scale-105 transition-all">
                     <img src="./assets/dog-cartoon.png" alt="" class="mx-auto bg-white p-5 rounded-full">
                     <h4 class="text-xl font-adlamDisplay pb-2">Dog</h4>
                     <span>3 items</span>
                  </div>
                 <!-- card -->
-                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4">
+                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4 hover:scale-105 transition-all">
                     <img src="./assets/fish-cartoon.png" alt="" class="mx-auto bg-white p-5 rounded-full">
                     <h4 class="text-xl font-adlamDisplay pb-2">Fish</h4>
                     <span>3 items</span>
                  </div>
                 <!-- card -->
-                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4">
+                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4 hover:scale-105 transition-all">
                     <img src="./assets/cat-cartoon.png" alt="" class="mx-auto bg-white p-5 rounded-full">
                     <h4 class="text-xl font-adlamDisplay pb-2">Cat</h4>
                     <span>3 items</span>
                  </div>
                 <!-- card -->
-                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4">
+                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4 hover:scale-105 transition-all">
                     <img src="./assets/bird-cartoon.png" alt="" class="mx-auto bg-white p-5 rounded-full">
                     <h4 class="text-xl font-adlamDisplay pb-2">Birds</h4>
                     <span>3 items</span>
                  </div>
                 <!-- card -->
-                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4">
+                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4 hover:scale-105 transition-all">
                     <img src="./assets/mouse-cartoon.png" alt="" class="mx-auto bg-white p-5 rounded-full">
                     <h4 class="text-xl font-adlamDisplay pb-2">Pet</h4>
                     <span>3 items</span>
                  </div>
                 <!-- card -->
-                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4">
+                 <div class="rounded-xl bg-[#F9DF8A] px-12 py-8 text-center space-y-4 hover:scale-105 transition-all">
                     <img src="./assets//rabbit-cartoon.png" alt="" class="mx-auto bg-white p-5 rounded-full">
                     <h4 class="text-xl font-adlamDisplay pb-2">Rabbit</h4>
                     <span>2 items</span>
@@ -133,9 +133,9 @@
             </div>
          </section>
          <!-- trending pet product section -->
-          <section class="bg-secondary">
-              <div class="w-11/12 container mx-auto py-24 ">
-                 <h2 class="text-2xl md:text-4xl font-adlamDisplay pb-10">Trending Pet Products</h2>
+          <section id="breeds" class="bg-secondary">
+              <div class="w-11/12 container mx-auto lg:py-24 py-14">
+                 <h2 class="text-2xl md:text-4xl font-adlamDisplay lg:pb-10 pb-5">Trending Pet Products</h2>
                  <div class="lg:flex gap-5">
                    <!-- left side big cart -->
                   <div class="bg-[#F9DF8A] rounded-lg p-5  relative lg:w-[424px] lg:h-[402px] mb-5 lg:mb-0">
@@ -144,13 +144,13 @@
                    <div class="absolute space-y-5 top-12">
                     <h3 class="text-2xl md:text-3xl font-adlamDisplay">T-Shirt For Dogs</h3>
                    <p>Discover a world of treats, toys, and <br> essentials handpicked for</p>
-                   <button class=" bg-white px-6 py-2 rounded-md hover:bg-amber-300 hover:border-accent   animate-float">Shop Now</button>
+                   <button class=" bg-white px-6 py-2 rounded-md hover:bg-amber-400 hover:border-accent   animate-float">Shop Now</button>
                    </div>
                   </div>
                   <!-- right side small card container -->
                    <div class="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 flex-grow">
                     <!-- small card -->
-                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center">
+                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center hover:border-accent hover:shadow-md transition-all">
                         <div>
                             <img src="./assets/dog-cartoon.png" alt="" class="bg-[#fff9f4] p-4 rounded-lg">
                         </div>
@@ -162,7 +162,7 @@
                         </div>
                     </div>
                     <!-- small card -->
-                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center">
+                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center hover:border-accent hover:shadow-md transition-all">
                         <div>
                             <img src="./assets/fish-cartoon.png" alt="" class="bg-[#fff9f4] p-4 rounded-lg">
                         </div>
@@ -174,7 +174,7 @@
                         </div>
                     </div>
                     <!-- small card -->
-                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center">
+                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center hover:border-accent hover:shadow-md transition-all">
                         <div>
                             <img src="./assets/bird-cartoon.png" alt="" class="bg-[#fff9f4] p-4 rounded-lg">
                         </div>
@@ -186,7 +186,7 @@
                         </div>
                     </div>
                     <!-- small card -->
-                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center">
+                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center hover:border-accent hover:shadow-md transition-all">
                         <div>
                             <img src="./assets/rabbit-cartoon.png" alt="" class="bg-[#fff9f4] p-4 rounded-lg">
                         </div>
@@ -198,7 +198,7 @@
                         </div>
                     </div>
                     <!-- small card -->
-                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center">
+                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center hover:border-accent hover:shadow-md transition-all">
                         <div>
                             <img src="./assets/bird-cartoon.png" alt="" class="bg-[#fff9f4] p-4 rounded-lg">
                         </div>
@@ -210,7 +210,7 @@
                         </div>
                     </div>
                     <!-- small card -->
-                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center">
+                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center hover:border-accent hover:shadow-md transition-all">
                         <div>
                             <img src="./assets/pet-couch.png" alt="" class="bg-[#fff9f4] p-4 rounded-lg">
                         </div>
@@ -222,7 +222,7 @@
                         </div>
                     </div>
                     <!-- small card -->
-                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center">
+                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center hover:border-accent hover:shadow-md transition-all">
                         <div>
                             <img src="./assets/fish-cartoon.png" alt="" class="bg-[#fff9f4] p-4 rounded-lg">
                         </div>
@@ -234,7 +234,7 @@
                         </div>
                     </div>
                     <!-- small card -->
-                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center">
+                    <div class="bg-white border rounded-lg p-3 flex gap-x-3 items-center hover:border-accent hover:shadow-md transition-all">
                         <div>
                             <img src="./assets/pet-couch.png" alt="" class="bg-[#fff9f4] p-4 rounded-lg">
                         </div>
@@ -246,7 +246,7 @@
                         </div>
                     </div>
                     <!-- small card -->
-                    <div class="bg-white border rounded-lg p-3  gap-x-3 items-center hidden md:flex">
+                    <div class="bg-white border rounded-lg p-3  gap-x-3 items-center hidden md:flex hover:border-accent hover:shadow-md transition-all">
                         <div>
                             <img src="./assets/rabbit-cartoon.png" alt="" class="bg-[#fff9f4] p-4 rounded-lg">
                         </div>
@@ -263,8 +263,8 @@
 
           </section>
           <!-- everyday low price section -->
-          <section class="w-11/12 container mx-auto py-24 ">
-            <h2 class="text-2xl md:text-4xl font-adlamDisplay pb-10">Everyday low Price</h2>
+          <section class="w-11/12 container mx-auto lg:py-24 py-14">
+            <h2 class="text-2xl md:text-4xl font-adlamDisplay lg:pb-10 pb-5">Everyday low Price</h2>
             <div class="lg:flex gap-5">
                 <!-- bigCard -->
                   <!-- left side big cart -->
@@ -289,9 +289,9 @@
             </div>
             </section>
         </main>
-        <footer class="bg-[#ffed93] relative mt-96 lg:mt-60">
+        <footer class="bg-[#ffed93] relative mt-72 lg:mt-60">
         <!-- Pawsome News! section -->
-        <section class="w-11/12 container mx-auto  py-10 px-5 bg-[#fff9f4] rounded-2xl lg:flex items-center justify-evenly absolute -top-96 lg:-top-60 left-0 right-0">
+        <section class="w-11/12 container mx-auto  py-10 px-5 bg-[#fff9f4] rounded-2xl lg:flex items-center justify-evenly absolute -top-80 lg:-top-60 left-0 right-0">
             <!-- left -->
              <div>
                 <img src="./assets/cute-pet-mid.png" alt="" class="mx-auto">
@@ -301,12 +301,12 @@
                 <h3 class="text-2xl lg:text-4xl font-adlamDisplay">Get Pawsome News</h3>
                 <p>Exclusive training tips, ticks, product deals and more.</p>
                 <input type="email" placeholder="Enter email ... " class="p-3 w-full outline-none">
-                <button class=" bg-accent px-6 py-2 rounded-md hover:bg-amber-300 hover:border-accent   animate-float ">Subscribe</button>
+                <button class=" bg-accent px-6 py-2 rounded-md hover:bg-amber-400 hover:border-accent   animate-float ">Subscribe</button>
               </div>
         </section>
-        <section class="w-11/12 container mx-auto pb-24 pt-96 lg:grid grid-cols-3 justify-between items-center space-y-5">
+        <section class="w-11/12 container mx-auto pb-20 lg:pb-24 pt-96 lg:grid grid-cols-3 justify-between items-center space-y-5">
             <!-- footer left -->
-             <div class="space-y-3">
+             <div class="space-y-3 pt-20 lg:pt-0">
                 <div class="flex gap-3 items-center">
                     <img src="./assets/logo-footer.png" alt="">
                 <span class="text-[26px] text-text">Browse<span class="text-accent">4</span>Pets</span>
@@ -316,19 +316,18 @@
              <!-- footer Middle -->
               <div class="lg:justify-self-center">
                 <ul class="space-y-2 lg:space-y-3 ">
-                    <li><a href="#" class="text-[20px]">Find a pet</a></li>
-                    <li><a href="#" class="text-[20px]">Breeds</a></li>
-                    <li><a href="#" class="text-[20px]">Contact us</a></li>
+                    <li><a href="#" class="text-[18px] hover:border-b-2 border-amber-400">Find a pet</a></li>
+                    <li><a href="#" class="text-[18px] hover:border-b-2 border-amber-400">Breeds</a></li>
+                    <li><a href="#" class="text-[18px] hover:border-b-2 border-amber-400">Contact us</a></li>
                  </ul>
               </div>
               <!-- footer right -->
                <div class="lg:justify-self-end">
                 <p>Follow Us</p>
                <div class="space-x-4 mt-3">
-                <i class="bi bi-facebook text-xl cursor-pointer"></i>
-               <i class="bi bi-instagram text-xl cursor-pointer"></i>
-               <i class="bi bi-linkedin text-xl cursor-pointer"></i>
-               <i class="bi bi-youtube text-xl cursor-pointer"></i>
+                <i class="bi bi-facebook text-xl cursor-pointer hover:scale-125 transition-all inline-block"></i>
+               <i class="bi bi-instagram text-xl cursor-pointer hover:scale-125 transition-all inline-block"></i>
+               <i class="bi bi-linkedin text-xl cursor-pointer hover:scale-125 transition-all inline-block"></i>
                </div>
                </div>
         </section>
