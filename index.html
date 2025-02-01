@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,13 +35,33 @@
     };
   </script>
     <style>
-        @keyframes float {
-          0%, 100% { transform: translateY(-5px); }
-          50% { transform: translateY(5px); }
-        }
-        .animate-float {
-          animation: float 2s ease-in-out infinite;
-        }
+        /* Floating and Rotating Shapes Animation */
+    @keyframes float-shape {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(45deg);
+      }
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+    }
+    .animate-float-shape {
+      animation: float-shape 3s ease-in-out infinite;
+    }
+    /* Floating animation for the pet image */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
       </style>
     
 </head>
@@ -85,12 +105,19 @@
     <main>
         <!-- hero section -->
         <section class="w-11/12 container mx-auto pt-24 lg:pt-5 relative">
-            <img src="./assets/cat-big.png" alt="pet img" class="w-auto h-auto mt-24 md:mt-0 ms-auto ">
+            <img src="./assets/cat-big.png" alt="pet img" class="w-auto h-auto mt-24 md:mt-0 ms-auto animate-float">
             <div class="absolute top-10 lg:top-24 space-y-4 lg:space-y-7">
                 <h1 class="font-adlamDisplay text-3xl lg:text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
             <p class="text-base lg:text-xl  lg:w-full">Discover a world of treats, toys, and essentials handpicked for <br class="hidden lg:block"> your furry friends. Shop now and make tails wag with joy!</p>
             <button class=" bg-accent px-6 py-2 rounded-md hover:bg-amber-400 hover:border-accent   animate-float">Find a pet</button>
             </div>
+              <!-- Floating Shapes animation -->
+  <div class="absolute top-10 left-20 w-2 h-6 bg-pink-500 rounded-full opacity-70 animate-float-shape"></div>
+  <div class="absolute top-32 right-20 w-1 h-10 bg-yellow-400 rounded-lg opacity-70 animate-float-shape"></div>
+  <div class="absolute bottom-20 left-10 w-5 h-2 bg-green-500 rounded-md opacity-70 animate-float-shape"></div>
+  <div class="absolute bottom-32 right-16 w-1 h-5 bg-purple-500 rounded-full opacity-70 animate-float-shape hidden lg:block"></div>
+  <div class="absolute top-44 left-60 w-1 h-10 bg-blue-400 rounded-lg opacity-70 animate-float-shape hidden lg:block"></div>
+  <div class="absolute top-44 left-[60%] w-9 h-1 bg-orange-500 rounded-lg opacity-70 animate-float-shape hidden lg:block"></div>
         </section>
         <!-- category section -->
          <section id="category" class="w-11/12 container mx-auto lg:py-24 py-14">
